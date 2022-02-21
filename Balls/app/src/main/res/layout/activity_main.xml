@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btHard"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botonstyles"
+        android:text="HARD"
+        android:textColor="#2B2B2B"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMedium" />
+
+    <Button
+        android:id="@+id/btEasy"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/botonstyles"
+        android:text="EASY"
+        android:textColor="#2B2B2B"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/btMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiff" />
+
+    <Button
+        android:id="@+id/btMedium"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botonstyles"
+        android:text="MEDIUM"
+        android:textColor="#2B2B2B"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/btHard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEasy" />
+
+    <TextView
+        android:id="@+id/tvDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="CHOOSE A DIFFICULTY:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/btEasy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiff"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
